@@ -1,0 +1,178 @@
+body {
+    width: 100%; /*100 por ciento del ancho*/
+    max-width: 1600px; 
+    margin: 0 auto;   /* margen centrado primero vertical, segundo horizontal*/
+    /*border: 2px solid #000;*/
+}
+
+header {
+    height: 16vh; /* vh = viewport height porcentaje del alto de la pantalla 100px aprox*/
+    width: 100%; /*ancho de la pantalla va en porcentaje para decir que es todo el ancho o una parte de el*/
+    max-width: 1600px;
+    margin: 0px 0px;
+    
+}
+
+header #logo {
+    height: 16vh; /* vh = viewport height porcentaje del alto de la pantalla*/
+    float: left; /*alineacion del logo dentro del header*/
+}
+
+header #logo img{
+    height: 16vh; 
+}
+
+header .menu{
+    height: 30vh;
+    float: right; /*Alineacion del nav dentro del header*/
+}
+
+header .menu ul li{
+    list-style: none; /*para quitar viñeta de etiqueta li*/
+    float: left; /*poner la lista horizontal orientacion izquierda*/
+    
+}
+
+header .menu ul li a{
+    background: #6e050e;
+    text-decoration: none; /*para quitar el subrayado default para los enlaces*/
+    padding: 20px 60px; /*relleno para el nav*/
+    color: #fff; /*color de las letras del nav*/
+    font-size: 1.1rem; /*tamaño de ñas letras del nav*/ 
+
+}
+
+header .menu ul li a:hover{
+    background: #2d2f38; /*color de fondo para cuando paso el mouse*/
+    color: #fff;  /*color letra para cuando paso el mouse sobre las opciones del nav*/
+}
+
+#perfil {
+    border: 2px solid #000;
+    height: 300px; /* Establece un alto fijo o usa una medida relativa si es necesario */
+    width: 100%;
+    overflow: hidden; /* Para evitar que el contenido se desborde */
+    display: flex; /* Usamos flexbox para alinear el contenido */
+    align-items: center; /* Centramos verticalmente el contenido */
+  }
+
+  /* Imagen de perfil */
+  #perfil img {
+    height: 100%; /* La imagen ocupará todo el alto de la sección */
+    width: auto; /* Ajuste proporcional para evitar que se deforme */
+    border: 2px solid #000;
+    object-fit: cover; /* Ajusta la imagen para cubrir el área sin deformarse */
+    float: left; /* Mantén el float para el layout clásico o usa flexbox para disposición avanzada */
+  }
+
+  /* Título y descripción */
+  #perfil h1 {
+    font-size: 3.1rem;
+    color: #2d2f38;
+    text-align: center;
+    flex-grow: 1; /* Permite que el contenido crezca dentro de la sección */
+    margin: 50px 250px;
+  }
+
+  #perfil p {
+    color: #2d2f38;
+    text-align: center;
+    flex-grow: 1; /* Ajuste para que el párrafo crezca si es necesario */
+  }
+
+  #recuadros {
+    width: 100%;
+    max-width: 1600px;
+    overflow: hidden;
+    border: 0px solid;
+    margin: 20px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #000;
+  }
+  
+  #recuadros h2 {
+    margin-bottom: 20px;
+}
+
+.recuadros-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los recuadros se envuelvan a una nueva línea si no caben */
+}
+
+  #recuadros .recuadro {
+    width: 280px;
+    overflow: hidden;
+    float: left;
+    padding: 5px;
+    color: #2d2f38;
+    margin: 10px;
+    border: 2px solid #000;
+    box-sizing: border-box; /* Incluye el borde en el ancho y alto */
+  }
+
+ 
+
+  #recuadros .recuadro .parrafo{
+    
+    color: #2d2f38;
+    text-align: justify;
+  }
+
+  .boton {
+    text-decoration: none;
+    border: 1px solid #2d2f38;
+    padding: 10px 20px;
+  }
+
+  .boton:hover{
+    background: #2d2f38;
+    color: #fff;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 1600px;
+    text-align: center;
+    clear: both; /* Limpia los efectos de `float` */
+    flex-shrink: 0; /* Evita que el pie de página se encoja */
+    
+}
+
+
+
+
+  /*formularios*/
+
+  .form-container {
+    display: flex; /* Convierte el contenedor en un contenedor flex */
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+}
+
+#registrarse, #iniciar_sesion {
+    width: 432px;
+    height: auto;
+    overflow: hidden;
+    padding: 5px;
+    margin: 20px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-around; /* Más espacio entre los formularios */
+    flex-wrap: wrap; /* Permite que los formularios se envuelvan a una nueva línea si no hay suficiente espacio */
+}
+
+#registrarse, #iniciar_sesion {
+    width: 45%; /* Ocupa el 40% del ancho disponible */
+    margin: 10px;
+}
+
+
+
+
+
