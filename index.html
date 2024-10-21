@@ -14,87 +14,53 @@
                 <img src="Img/logo.jpg" alt="Melodica">
 
             </div>
-
-            <nav class="menu">
-                <ul>
-                    <li> <a href="index.html">Inicio</a></li>
-                    <li> <a href="miPerfil.html">Mi Perfil</a></li>
-                    <li> <a href="amigos.html">Mis Amigos</a></li>
-                    <li> <a href="musica.html">Mi Música</a></li>
-                    <li> <a href="fotos.html">Mis Fotos</a></li>
-                    <li> <a href="buscar.html">Buscar Amigos</a></li>
-
-                </ul>
-
-            </nav>
-
-
         </header>
         
-        <section id="perfil">
-            <img src="/Img/fotoPerfil.jpg" alt="foto de perfil" height="150">
-            <H1> Cristian Espindola</H1>
-            <p> Descripción</p>
-        </section>
+        <section id="registrarse">
 
-        <section id="recuadros">
-            <h2>Mis Amigos</h2>
-            <section class="recuadro">
-                <img src="/Img/amigo1.jpg" height="150">
-                <h2>Amigo1</h2>
-                <p class="parrfo">
-                    DescripcionDescripcion
-                </p>
-                <a href="" class="boton">Ver Perfil</a><br><br>
-            </section>
+            <h2>Registrarse</h2>
+            <form name="Nuevo Usuario" method="POST" action="php/ConexionCrearUsuario.php">
+                <!-- Input para el formulario de registro-->
+                User: <br>
+                <input type="text" name="user" pattern="[a-zA-z0-9]+" placeholder="Ingrese su Usuario" required><br>
+                Contraseña: <br>
+                <input type="password" name="contraseña" maxlength="20" autocomplete="new-password" placeholder="Ingrese su contraseña" required><br>
+                Nombre: <br>
+                <input type="text" name="nombre" pattern="[a-zA-z]+" placeholder="Ingrese su Nombre" required><br>
+                Apellido: <br>
+                <input type="text" name="apellido" pattern="[a-zA-z]+" placeholder="Ingrese su Apellido" required><br>
+                Email: <br>
+                <input type="email" name="correo" placeholder="Ingrese su Email" required><br>
+                Edad: <br>
+                <input type="number" name="edad" min="18" placeholder="Ingrese su Edad" required><br>
+                Descripcion: <br>
+                <textarea name="descripcion" placeholder="Ingrese su descripcion" required></textarea><br>
+                <hr>
+                <!-- Botones del formulaio de registro-->
+                 <input type="submit" name="enviar" class="boton" value="Registrarse">
+                 <input type="reset" class="boton" value="Borrar">
 
-            <section class="recuadro">
-                <img src="/Img/amigo2.jpg" height="150">
-                <h2>Amigo2</h2>
-                <p class="parrfo">
-                    DescripcionDescripcion
-                </p>
-                <a href="" class="boton">Ver Perfil</a><br><br>
-            </section>
+                
+            </form>
 
-            <section class="recuadro">
-                <img src="/Img/amigo3.jpg" height="150">
-                <h2>Amigo3</h2>
-                <p class="parrfo">
-                    DescripcionDescripcion
-                </p>
-                <a href="" class="boton">Ver Perfil</a><br><br>
-            </section>
-           
-        </section>
+         </section>   
 
-        <section id="recuadros">
-            <h2>Mis Fotos</h2>
-            <section class="recuadro">
-                <img src="Img/foto1.jpg" height="200" width="280">
-            </section>
+         <section id="iniciar_sesion">
 
-            <section class="recuadro">
-                <img src="Img/foto2.jpg" height="200" width="280">
-            </section>
+            <h2>Iniciar Sesion</h2>
+            <form name="contacto" method="POST" action="php/IniciarSesion.php">
+                User: <br>
+                <input type="text" name="user" placeholder="Ingrese su Usuario" required><br>
+                Contraseña: <br>
+                <input type="password" name="contraseña" autocomplete="off" placeholder="Ingrese su Contraseña"><br>
+                <hr>
+                <input type="submit" name="enviar" class="boton" value="Iniciar Sesion">
+            </form>
+         </section>
 
-            <section class="recuadro">
-                <img src="Img/foto3.jpg" height="200" width="280">
-            </section>
 
-            
-        </section>
 
-        <section id="Listado">
-            <h2>Mis Canciones</h2>
-            <ul>
-              <li>Canción 1 - Artista 1</li>
-              <li>Canción 2 - Artista 2</li>
-              <li>Canción 3 - Artista 3</li>
-            </ul>
-          </section>
-
-        <footer>
+         <footer>
 
             <p>Copyright &copy; 2024, Cristian Espindola</p>
         </footer>
