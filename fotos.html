@@ -34,12 +34,25 @@
         <section id="perfil">
             <img src="/Img/fotoPerfil.jpg" alt="foto de perfil" height="150">
             <H1> Cristian Espindola</H1>
-            <p> Descripción</p>
+            <form action="php/cambiarFoto.php" method="POST" enctype="multipart/form-data">
+            Cambiar Foto de Perfil: <input name="archivo" id="archivo" type="file" accept=".jpg, .jpeg, .png" required/>
+            <input type="submit" name="subir" value="Subir">
+            </form>    
         </section>
 
         
         <section id="recuadros">
             <h2>Mis Fotos</h2>
+           
+            <h3>
+                <form action="php/SubirFoto.php" method="POST" enctype="multipart/form-data">
+                Añadir imagen: <input name="archivo" id="archivo" type="file" accept=".jpg, .jpeg, .png" required>
+                <input type="submit" name="subir" value="Subir">   
+                </form>
+            </h3>
+           
+           
+           
             <section class="recuadro">
                 <img src="Img/foto1.jpg" height="200" width="280">
             </section>
