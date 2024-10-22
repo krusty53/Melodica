@@ -1,6 +1,6 @@
 <?php
 
-include("conexion.php"); //se incluye la ejecucion del archivo conexion
+include("conexion.php");  //se incluye la ejecucion del archivo conexion
 
 
 //declaracion de variables para recibir y guardar los datos enviados desde el formulario
@@ -54,7 +54,7 @@ if(!$consultaId) {   //Si la consulta esta vacia entonces significa que no exist
 }
 else{
     echo "El user ya existe.";
-    echo "<a href='index.html'> Intentalo de nuevo </a></div>";
+    echo "<a href='../index.html'> Intentalo de nuevo </a></div>";
 }
 
 //cierre de conexion con la BD
